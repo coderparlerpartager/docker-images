@@ -1,6 +1,6 @@
-FROM php:7.4-apache
+FROM php:7.4-fpm
 
-LABEL authors="Hannes Papenberg"
+LABEL authors="Hannes Papenberg, Alexandre ELISÉ"
 
 RUN seq 1 8 | xargs -I{} mkdir -p /usr/share/man/man{}
 RUN apt-get update
